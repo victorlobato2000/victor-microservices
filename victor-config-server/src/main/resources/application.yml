@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: victor-config-server
-  profiles:
-    active:
-      - native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/victorlobato2000/victor-microservices
+          default-label: master
+          search-paths:
+            - 'victor-config-server\src\main\resources*'
