@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: victor-config-server
+  profiles:
+    active:
+    - dev,perf,prod,qa
   cloud:
     config:
       server:
