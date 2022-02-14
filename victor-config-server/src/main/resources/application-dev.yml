@@ -1,0 +1,17 @@
+##PROPRIEDADES DA APLICAÇÃO
+spring:
+  application:
+    name: greeting-service
+
+##PROPRIEDADES DO SPRING ACTUATOR
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+
+#PROPRIEDADES CUSTOMIZADAS
+greeting-service:
+  greeting: "Hello"
+  default-value: "World"
