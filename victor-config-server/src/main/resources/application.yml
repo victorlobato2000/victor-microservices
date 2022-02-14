@@ -4,14 +4,11 @@ server:
 spring:
   application:
     name: victor-config-server
-  profiles:
-    active:
-    - dev,perf,prod,qa
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/victorlobato2000/victor-microservices
+          uri: https://github.com/victorlobato2000/victorlobato-config-server
           default-label: master
           search-paths:
-            - 'victor-config-server\src\main\resources*'
+            - 'greeting-service*'
